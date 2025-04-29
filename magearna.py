@@ -28,7 +28,10 @@ def desbloquear_teclado():
         simplekeyboard.unblock_key(tecla)
 
 def bloquear_mouse():
-    ctypes.windll.user32.ClipCursor(ctypes.byref(ctypes.wintypes.RECT(40, 50, 40, 50)))
+#    tela cheia
+    ctypes.windll.user32.ClipCursor(ctypes.byref(ctypes.wintypes.RECT(40, 50, 60, 70)))
+# janela
+    # ctypes.windll.user32.ClipCursor(ctypes.byref(ctypes.wintypes.RECT(40, 50, 70, 90)))
 
 def desbloquear_mouse():
     ctypes.windll.user32.ClipCursor(None)
